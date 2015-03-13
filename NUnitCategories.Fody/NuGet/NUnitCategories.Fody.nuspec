@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>NUnitCategories.Fody</id>
+        <version>1.0.0</version>
+        <authors>Jeremy Beavon</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <developmentDependency>true</developmentDependency>
+        <description>Adds an NUnit Category attribute to every fixture and test.</description>
+        <dependencies>
+            <dependency id="Fody" version="1.28.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Fody_ToBeDeleted.txt" target="content\Fody_ToBeDeleted.txt" />
+        <file src="install.ps1" target="tools\install.ps1" />
+        <file src="uninstall.ps1" target="tools\uninstall.ps1" />
+        <file src="..\bin\Release\NUnitCategories.Fody.dll" target="NUnitCategories.Fody.dll" />
+    </files>
+</package>
