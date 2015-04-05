@@ -27,6 +27,7 @@ namespace NUnitCategories.Fody
             foreach (TypeDefinition type in ModuleDefinition.Types.Where(type => HasAttribute(type, "TestFixtureAttribute")))
             {
                 string typeName = type.Namespace + "." + type.Name;
+                AddCategoryAttribute(type, type.Namespace);
                 AddCategoryAttribute(type, typeName);
                 foreach (MethodDefinition method in type.Methods.Where(method => HasAttribute(method, "TestAttribute")))
                 {
